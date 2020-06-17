@@ -37,11 +37,18 @@ public class Program {
 		//System.out.println("Inserted! New ID = " + newSeller.getId());
 		
 		
-		System.out.println("\n====== TESTE 5 - método Seller insert ========");
+		System.out.println("\n====== TESTE 5 - método Seller Update ========");
 		seller = sellerDao.findById(8);
 		seller.setName("Martha Rocha");
 		sellerDao.update(seller);
 		System.out.println("Update Completed! ");
+		
+		
+		System.out.println("\n====== TESTE 6 - método Seller delet ========");
+		int id = 8;
+		sellerDao.deleteById(id);
+		System.out.println("Deleted! ");
+		
 		
 	}
 }
